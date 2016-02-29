@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="author" content="Eugene Furman">
+	
+    <title>interview test recipe project</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+    <script src="scripts/lib/angular.min.js"></script>
+	
+</head>
+<body>
+	
+	<div class="maincontainer" ng-controller="recipeCtrl">
+		<section class="content">
+			<img id="topicImage" src="assets/images/0140_foodsense.jpg">
+			
+            <ul class="topics">
+                <li class="active" ng-click="getSelected()" imgsrc="0140_foodsense.jpg">
+                    <a href="#">
+                    	<h3>Tastemakers</h3>
+                        <span>Feast your eyes &amp; get recipes!</span>
+                    </a>
+                </li>
+                <li ng-click="getSelected()" imgsrc="0219_foodsense.jpg">
+                    <a href="#">
+                    	<h3>Blog</h3>
+                        <span>News, how-tos, stories, and more</span>
+                    </a>
+                </li>
+                <li ng-click="getSelected()" imgsrc="0052_foodsense.jpg">
+                    <a href="#">
+                    	<h3>The A-List</h3>
+                        <span>Handpicked, absolute favorites</span>
+                    </a>
+                </li>
+                <li ng-click="getSelected()" imgsrc="0232_foodsense.jpg">
+                    <a href="#">
+                    	<h3>Contribute</h3>
+                        <span>We want to hear from you!</span>
+                    </a>
+                </li>
+            </ul>
+			
+			<div class="sendmail">
+				<div class="mailtxt">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</div>
+				<div class="mailfrm">
+					<input type="text" name="Email" placeholder="Email">
+					<button>Subscribe</button>
+				</div>
+			</div>
+			
+			<div class="addrecipy" ng-click="showAddRecipeWindow()">
+				<a href="#">Add a Recipe</a>
+			</div>
+			
+			<div class="recipe">
+				<div ng-repeat="rcp in recipes">
+					<img src="assets/images/{{::rcp.image}}" />
+					<a href="#"><h3>{{::rcp.title}}</h3></a>
+					<div class="summary">{{::rcp.summary}}</div>
+					<div class="recipedate">
+						{{::rcp.date}}&nbsp;/&nbsp<a href="#">Read »</a>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		
+		
+		<div class="screenwrapper" ng-show="showAddRecipe">
+			<div class="addrecipeform">
+				<form>
+					<input type="text" ng-model="addTitle" placeholder="Title" required>
+					<textarea ng-model="addSummary" placeholder="Summary" required></textarea>
+					<input name="filename" ng-model="addFileName" type="file">
+					<button ng-click="closeAddRecipe()">Close</button>
+					<button ng-click="addRecipe()">Add</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script src="scripts/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+/*
+* reset styles
+*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    border			: 0;
+    outline			: 0;
+    font-size		: 100%;
+	font-weight		: inherit;
+    font-style		: normal;
+    vertical-align	: baseline;
+    background		: transparent;
+	padding			: 0px;
+	margin			: 0px;
+}
+
+body {
+	color			: #333;
+	font-family		: "ff-tisa-web-pro", Georgia, sans-serif;
+	font-size		: 16px;
+}
+
+ul {
+	list-style		: none;
+}
+
+a {
+	text-decoration	: none;
+	color			: #39a086;
+}
+
+.maincontainer {
+	width			: 1080px; 
+	margin			: 0 auto;
+	padding-top 	: 20px;
+	min-width		: 320px;
+}
+
+.maincontainer > section {
+	display			: inline-block;
+	vertical-align	: top;
+}
+
+.maincontainer section {
+	width			: 896px; /*dimention of the big image*/
+}
+
+
+.linkbox {
+	margin-bottom		: 30px;
+	margin-top			: 20px;
+}
+
+
+
+.content .topics {
+	background-color	: #EFF8F9;
+	margin-top			: -4px;
+}
+
+.content .topics > li {
+	width				: 22%;
+	display				: inline-block;
+	height				: 60px;
+	vertical-align		: middle;
+	margin-right		: -4px;
+	padding				: 20px 0px 5px 20px;
+	border-left			: 1px solid #D3EDE9;
+}
+
+.content .topics > li:first-child {
+	border-left			: none;
+	width				: 23%;
+}
+
+.content .topics > li:last-child {
+	width				: 23.8%;
+}
+
+.content .topics > li.active{
+	background-color	: #D9F0EC;
+}
+
+.content .topics > li h3 {
+	font-size			: 1.1em;
+}
+
+.content .topics > li span {
+	font-size			: .75em;
+    font-style			: italic;
+}
+
+.content .sendmail {
+	padding				: 10px 20px;
+	border-bottom		: 1px dashed #d5d5d5;
+	border-top			: 1px dashed #d5d5d5;
+	margin-top			: 30px;
+}
+
+.content .sendmail > div {
+	display				: inline-block;
+	line-height			: 14px;
+}
+
+.content .sendmail > div.mailtxt {
+	background-image	: url(../images/icon-mailinglist-32.png);
+	background-position	: 0 0;
+    background-repeat	: no-repeat;
+	padding-left		: 60px;
+	width				: 50%;
+	font-size			: .70em;
+    font-style			: italic;
+	vertical-align		: text-bottom;
+}
+
+.content .sendmail > div.mailfrm {
+	vertical-align		: text-bottom;
+	text-align			: right;
+}
+
+.content .sendmail > div.mailfrm input[type="text"]{
+	width				: 255px;
+	border				: 1px solid #999;
+	padding				: 2px;
+}
+
+button{
+	border-radius		: 4px;
+	border				: 1px solid #bbb;
+	padding				: 2px 10px 3px 10px;
+	margin-left			: 12px;
+	font-weight			: bold;
+	font-family			: Arial, sans-serif;
+	line-height			: 1.2em;
+	background-color	: #F0F0F0;
+}
+
+.content .recipe {
+	margin-top			: 30px;
+}
+
+.content .recipe > div {
+	display				: inline-block;
+	margin-left			: 20px;
+	width				: 206px;
+	vertical-align		: top;
+}
+
+.content .recipe > div:first-child {
+	display				: inline-block;
+	margin-left			: 0px;
+}
+
+.content .recipe img {
+	border				: 1px solid #e5e5e5;
+	width				: 190px;
+	padding				: 8px;
+}
+
+.content .recipe h3 {
+	font-size			: 1em;
+	margin				: 10px 0px;
+	height				: 40px;
+}
+
+.content .recipe .summary {
+	font-size			: .85em;
+    line-height			: 1.4em;
+}
+
+.content .recipe .recipedate {
+	margin-top			: 10px;
+	font-size			: .85em;
+	color				: #a5a5a5;
+}
+
+
+
+
+.screenwrapper {
+	position			: absolute;
+	top					: 0;
+	right				: 0;
+	width				: 100%;
+	height				: 100%;
+	background-color	: #ccc;
+	opacity				: .95;
+}
+
+.screenwrapper .addrecipeform {
+	margin 				: 15% auto;
+	width				: 300px;
+	background-color	: #D9F0EC;
+	border				: 1px solid #999;
+	opacity				: 1;
+	padding				: 10px;
+	position			: relative;
+	box-sizing			: border-box;
+	text-align			: center;
+}
+
+.screenwrapper .addrecipeform input, .screenwrapper .addrecipeform textarea {
+	width				: 95%;
+	border				: 1px solid #999;
+	padding				: 2px;
+	background-color	: #fff;
+	height				: 25px;
+	margin-bottom		: 10px;
+}
+
+.screenwrapper .addrecipeform textarea {
+	height				: 75px;
+}
+	
+
+
+.removeoverflowy {
+	overflow-y			: hidden;
+}
+
+	.content .topics > li {
+		height			: 25px;
+		padding			: 10px 0px 4px 20px;
+	}
+	
+	.content .topics > li span {
+		display			: none;
+	}
+	
+	.content .topics > li h3 {
+		font-size		: .95em;
+	}
+
+	.maincontainer {
+		width			: 897px;
+	}
+}
+	
+
+
+	
+	#topicImage {
+		width			:500px;
+	}
+	
+	.content .topics {
+		display			: none;
+	}
+	
+	
+	
+	
+	
+	.content .sendmail > div.mailtxt {
+		margin-bottom	: 8px;
+		width			: 90%;
+	}
+	
+	.content {
+		width			: 500px;
+	}
+	
+	.content .recipe > div:first-child {
+		margin-left		: 30px;
+	}
+	
+	.content .recipe > div:first-child {
+		margin-right	: 10px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.maincontainer, .content, #topicImage {
+		width			: 320px;
+	}
+	
+	.content .sendmail > div.mailfrm {
+		text-align			: left;
+	}
+	
+	.content .sendmail > div.mailfrm input[type="text"]{
+		width				: 160px;
+	}
+}

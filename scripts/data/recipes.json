@@ -1,0 +1,28 @@
+{
+	"recipes": [
+		{
+			"image": "cookbooks_blog.jpg",
+			"title": "2012's Best Summer Cookbooks",
+			"summary": "With the best of the season coming from \"orchards, farms and gardens,\" NPR has put together an impressive collection of 10 summer cookbooks.",
+			"date": "May 23, 2012"
+		},
+		{
+			"image": "SweetPotatoChips.jpg",
+			"title": "How to Make Vegetable Chips",
+			"summary": "About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in Brooklyn, and before very thoughtfully prepared vegan...",
+			"date": "May 17, 2012"
+		},
+		{
+			"image": "Pinterest_Page_featured.png",
+			"title": "Join us on Pinterest",
+			"summary": "If I could curate a cookbook for you, this would be it.",
+			"date": "May 16, 2012"
+		},
+		{
+			"image": "Adithi_Dinner_blog.jpg",
+			"title": "Recipes from a Sunday Supper",
+			"summary": "I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at...",
+			"date": "May 16, 2012"
+		}
+	]
+}
